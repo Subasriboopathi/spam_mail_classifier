@@ -1,6 +1,11 @@
 # spam_mail_classifier
 
-A Python-based machine-learning pipeline to detect spam emails with robust preprocessing, feature selection, over-sampling, and hyperparameter tuning.
+An end-to-end Python pipeline for detecting spam emails using feature selection, SMOTE balancing, and hyperparameter-tuned classifiers.  
+Outputs cross-validation & test accuracies (in %), confusion matrix, classification report, and ROC-AUC.
+
+## Overview
+
+`spam_mail_classifier` loads a CSV of engineered numeric email features, imputes missing values, scales them into [0,1], and selects the most informative predictors via a chi-squared test. It balances the training set with SMOTE, then compares and tunes two models—Logistic Regression and Random Forest—using stratified GridSearchCV. Finally, it reports both CV and hold-out test metrics, including accuracy (%), confusion matrix, classification report, and ROC-AUC.
 
 ## 🚀 Features
 
