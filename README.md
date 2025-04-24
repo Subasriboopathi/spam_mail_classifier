@@ -12,13 +12,12 @@ A Python-based machine-learning pipeline to detect spam emails with robust prepr
 
 ## 📂 Repository Contents
 
-- `spam_email_data.csv` — Original dataset with 7 engineered numeric features + `SpamLabel`.  
-- `spam_email_dataset.csv` — synthetic dataset (bootstrap + noise).  
+- `spam_email_data.csv` — Original dataset with 7 engineered numeric features + `SpamLabel`.    
 - `README.md` — This file.  
 
 ## 🔧 Installation
 
 ```bash
 git clone https://github.com/Subasriboopathi/spam_mail_classifier.git
-cd spam-classifier
+cd spam_mail_classifier
 pip install -r requirements.txt
